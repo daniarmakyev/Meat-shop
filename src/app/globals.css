@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import url(./Null.css);
 
+*{
+  font-size: 18px;
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;

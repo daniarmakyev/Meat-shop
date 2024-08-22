@@ -24,11 +24,11 @@ const Header: React.FC = () => {
             />
           </a>
           <ul
-            className={`gap-10 mt-5 ms-auto me-auto flex-col md:flex-row md:gap-20 transform transition-all duration-300 ease-in-out ${
+            className={`gap-10 mt-5 ms-auto me-auto flex-col md:flex-row md:gap-20 transform ${
               isActive
-                ? "flex opacity-100 translate-y-0"
-                : "flex opacity-0 translate-y-[-20px] pointer-events-none"
-            } md:opacity-100 md:translate-y-0 md:pointer-events-auto`}
+                ? "relative flex opacity-100 translate-y-0 transition-all duration-300 ease-in-out"
+                : "absolute flex opacity-0 translate-y-[-20px] pointer-events-none transition-none"
+            } md:relative md:opacity-100 md:translate-y-0 md:pointer-events-auto`}
           >
             <li>
               <Link href={""}>Гуляш</Link>
@@ -41,11 +41,11 @@ const Header: React.FC = () => {
             </li>
           </ul>
           <div
-            className={`mt-5 ms-auto me-auto gap-6 md:ms-0 md:me-0 flex-row  transform transition-all duration-300 ease-in-out ${
+            className={`mt-5 ms-auto me-auto gap-6 md:ms-0 md:me-0 flex-row  transform ${
               isActive
-                ? "flex opacity-100 translate-y-0"
-                : "flex opacity-0 translate-y-[-20px] pointer-events-none"
-            } md:opacity-100 md:translate-y-0 md:pointer-events-auto`}
+                ? "relative flex opacity-100 translate-y-0 transition-all duration-300 ease-in-out"
+                : "absolute flex opacity-0 translate-y-[-20px] pointer-events-none transition-none"
+            } md:relative md:opacity-100 md:translate-y-0 md:pointer-events-auto`}
           >
             <a href="#">
               {" "}

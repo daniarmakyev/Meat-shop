@@ -3,7 +3,7 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     <footer>
-      <p>© 2024 My Website</p>
+      <p></p>
       {/* Добавьте информацию о сайте или ссылки */}
     </footer>
   );
