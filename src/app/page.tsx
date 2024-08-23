@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <main className="mt-8">
@@ -17,28 +18,34 @@ export default function Home() {
             Выбирая Кенен Дасторкон, вы выбираете настоящее кыргызское качество.
           </p>
         </section>
-        <div className="flex justify-evenly lg:justify-between mt-5 h-80  flex-wrap sm:flex-nowrap">
-          <Image
-            src="/groundedMeat.webp"
-            alt="Досторкон гуляш"
-            width={400}
-            height={400}
-            className="object-cover max-w-48  max-h-48 lg:max-w-sm lg:max-h-96"
-          />
-          <Image
-            src="/gulashFour.jpg"
-            alt="Досторкон гуляш"
-            width={400}
-            height={400}
-            className="object-cover max-w-48 max-h-48 lg:max-w-sm lg:max-h-96"
-          />
-          <Image
-            src="/largeMeat.webp"
-            alt="Досторкон гуляш"
-            width={400}
-            height={400}
-            className="object-cover max-w-48 max-h-48 lg:max-w-sm lg:max-h-96"
-          />
+        <div className="flex justify-evenly lg:justify-between mt-5 h-80  flex-wrap sm:flex-nowrap gap-5 md:gap-2 mb-20">
+          <Link href={"./farsh"}>
+            <Image
+              src="/groundedMeat.webp"
+              alt="Досторкон гуляш"
+              width={400}
+              height={400}
+              className="object-cover max-w-48  max-h-48 lg:max-w-sm lg:max-h-96 transform transition-transform duration-300 hover:scale-110"
+            />
+          </Link>
+          <Link href={""}>
+            <Image
+              src="/gulashFour.jpg"
+              alt="Досторкон гуляш"
+              width={400}
+              height={400}
+              className="object-cover max-w-48 max-h-48 lg:max-w-sm lg:max-h-96 transform transition-transform duration-300 hover:scale-110"
+            />
+          </Link>
+          <Link href={""}>
+            <Image
+              src="/largeMeat.webp"
+              alt="Досторкон гуляш"
+              width={400}
+              height={400}
+              className="object-cover max-w-48 max-h-48 lg:max-w-sm lg:max-h-96 transform transition-transform duration-300 hover:scale-110"
+            />
+          </Link>
         </div>
       </div>
     </main>

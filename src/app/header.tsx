@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     <header className="pt-4">
       <div className="container">
         <nav className="flex flex-col md:flex-row">
-          <a href="#">
+          <Link href="/">
             {" "}
             <Image
               src="/logo.png"
@@ -22,7 +22,7 @@ const Header: React.FC = () => {
               height={100}
               className="logo"
             />
-          </a>
+          </Link>
           <ul
             className={`gap-10 mt-5 ms-auto me-auto flex-col md:flex-row md:gap-20 transform ${
               isActive
@@ -31,10 +31,10 @@ const Header: React.FC = () => {
             } md:relative md:opacity-100 md:translate-y-0 md:pointer-events-auto`}
           >
             <li>
-              <Link href={""}>Гуляш</Link>
+              <Link href={"../farsh"}>Фарш</Link>
             </li>
             <li>
-              <Link href={""}>Фарш</Link>
+              <Link href={""}>Гуляш</Link>
             </li>
             <li>
               <Link href={""}>О нас</Link>
