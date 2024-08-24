@@ -59,7 +59,7 @@ const Header: React.FC = () => {
                 : "absolute flex opacity-0 translate-y-[-20px] pointer-events-none transition-none"
             } md:relative md:opacity-100 md:translate-y-0 md:pointer-events-auto`}
           >
-            <a href="https://wa.me/996555010951">
+            <a href="https://t.me/eulcursed">
               {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
               </svg>
             </a>
 
-            <a href="#">
+            <a href="https://wa.me/996555010951">
               {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
