@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 const Header: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
@@ -9,19 +10,32 @@ const Header: React.FC = () => {
     setIsActive(!isActive);
   }
 
+  const pathname = usePathname();
+  console.log(pathname);
+
   return (
     <header className="pt-4">
       <div className="container">
         <nav className="flex flex-col md:flex-row">
           <Link href="/">
             {" "}
-            <Image
-              src="/logo.png"
-              alt="Досторкон логотип"
-              width={100}
-              height={100}
-              className="rounded-md"
-            />
+            {pathname === "/gulash" ? (
+              <Image
+                src="/logoGreen.png"
+                alt="Досторкон логотип"
+                width={100}
+                height={100}
+                className="rounded-md"
+              />
+            ) : (
+              <Image
+                src="/logo.png"
+                alt="Досторкон логотип"
+                width={100}
+                height={100}
+                className="rounded-md"
+              />
+            )}
           </Link>
           <ul
             className={`gap-10 mt-5 ms-auto me-auto flex-col md:flex-row md:gap-20 transform ${
@@ -34,11 +48,9 @@ const Header: React.FC = () => {
               <Link href={"../farsh"}>Фарш</Link>
             </li>
             <li>
-              <Link href={""}>Гуляш</Link>
+              <Link href={"./gulash"}>Гуляш</Link>
             </li>
-            <li>
-              <Link href={""}>О нас</Link>
-            </li>
+            <li>{/* <Link href={""}>О нас</Link> */}</li>
           </ul>
           <div
             className={`mt-5 ms-auto me-auto gap-6 md:ms-0 md:me-0 flex-row  transform ${
@@ -47,7 +59,7 @@ const Header: React.FC = () => {
                 : "absolute flex opacity-0 translate-y-[-20px] pointer-events-none transition-none"
             } md:relative md:opacity-100 md:translate-y-0 md:pointer-events-auto`}
           >
-            <a href="#">
+            <a href="https://wa.me/996555010951">
               {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"

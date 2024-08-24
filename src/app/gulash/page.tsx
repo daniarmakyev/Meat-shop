@@ -7,26 +7,26 @@ const page = () => {
     <div className=" flex lg:gap-5 gap-28 justify-start lg:justify-center lg:ms-[500px] flex-wrap lg:flex-nowrap ms-4 mb-3 lg:mb-10">
       <section
         className="lg:absolute lg:inset-0 w-auto lg:w-1/2 top-28  lg:mt-28 max-h-80 rounded-e-3xl lg:rounded-e-full ps-3 pb-3 "
-        style={{ backgroundColor: "#BE1A1B" }}
+        style={{ backgroundColor: "#00ca76" }}
       >
         {" "}
         <div className="relative">
           <h2
-            className="md:text-4xl text-2xl font-semibold mt-3 md:mt-11 text-white lg:absolute right-48 max-w-96"
+            className="md:text-4xl text-2xl font-semibold mt-3 md:mt-11 text-white lg:absolute right-2/3"
             style={{
               textDecoration: "underline",
-              textDecorationColor: "#ff9595",
+              textDecorationColor: "#00ff95",
             }}
           >
-            Фарш мелкого и крупного помола
+            Гуляш
           </h2>
 
-          <p className="mt-6 text-white max-w-lg lg:absolute right-16 top-28">
-            Наш фарш мелкого помола производится с использованием отборного
-            мяса, которое проходит строгий контроль на каждом этапе. Мы
-            обеспечиваем идеальную текстуру и однородность, чтобы продукт
-            подходил для различных блюд. Подходит для домашнего использования и
-            профессиональной кулинарии.
+          <p className="mt-6 text-white max-w-lg lg:absolute right-16 top-24">
+            Наш гуляш производится из отборного мяса, которое проходит строгий
+            контроль на каждом этапе производства. Мы обеспечиваем идеальную
+            нарезку и однородность, чтобы продукт подходил для приготовления
+            разнообразных блюд. Подходит как для домашнего использования, так и
+            для профессиональной кулинарии.
           </p>
         </div>
       </section>
@@ -34,15 +34,15 @@ const page = () => {
       <div className="mt-5 flex gap-1 flex-nowrap lg:flex-wrap">
         <div className="flex flex-col gap-2">
           <Image
-            src={"/largeMeat.webp"}
+            src={"/gulashFour.jpg"}
             alt="Фарш"
             width={200}
-            height={150}
-            className="rounded-lg h-44 w-full max-w-52"
+            height={120}
+            className="rounded-lg h-32 w-full max-w-52"
           />
 
           <Image
-            src={"/farchTwo.jpg"}
+            src={"/gulashTwo.jpg"}
             alt="Фарш"
             width={200}
             height={200}
@@ -51,14 +51,14 @@ const page = () => {
         </div>
         <div className="flex flex-col gap-2">
           <Image
-            src={"/farchFive.jpg"}
+            src={"/gulashThree.jpg"}
             alt="Фарш"
             width={200}
             height={240}
             className="rounded-lg h-64 w-full max-w-52"
           />
           <Image
-            src={"/farchFour.jpg"}
+            src={"/gulashOne.jpg"}
             alt="Фарш"
             width={200}
             height={200}

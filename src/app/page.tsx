@@ -18,32 +18,32 @@ export default function Home() {
             Выбирая Кенен Дасторкон, вы выбираете настоящее кыргызское качество.
           </p>
         </section>
-        <div className="flex justify-evenly lg:justify-between mt-5 h-80  flex-wrap sm:flex-nowrap gap-5 md:gap-2 mb-20">
+        <div className="flex justify-evenly lg:justify-evenly mt-5 h-80  flex-wrap sm:flex-nowrap gap-5 md:gap-2 mb-72 sm:mb-0">
           <Link href={"./farsh"}>
             <Image
               src="/groundedMeat.webp"
-              alt="Досторкон гуляш"
+              alt="фарш"
               width={400}
               height={400}
-              className="object-cover max-w-48  max-h-48 lg:max-w-sm lg:max-h-96 transform transition-transform duration-300 hover:scale-110"
+              className="object-cover max-w-48  max-h-48 lg:max-w-80  lg:max-h-96 transform transition-transform duration-300 hover:scale-110"
             />
           </Link>
-          <Link href={""}>
+          <Link href={"./gulash"}>
             <Image
               src="/gulashFour.jpg"
-              alt="Досторкон гуляш"
+              alt="гуляш"
               width={400}
               height={400}
-              className="object-cover max-w-48 max-h-48 lg:max-w-sm lg:max-h-96 transform transition-transform duration-300 hover:scale-110"
+              className="object-cover max-w-48 max-h-48 lg:max-w-80 lg:max-h-96 transform transition-transform duration-300 hover:scale-110"
             />
           </Link>
           <Link href={""}>
             <Image
               src="/largeMeat.webp"
-              alt="Досторкон гуляш"
+              alt="фарш крупный"
               width={400}
               height={400}
-              className="object-cover max-w-48 max-h-48 lg:max-w-sm lg:max-h-96 transform transition-transform duration-300 hover:scale-110"
+              className="object-cover max-w-48 max-h-48 lg:max-w-80  lg:max-h-96 transform transition-transform duration-300 hover:scale-110"
             />
           </Link>
         </div>
