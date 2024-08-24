@@ -20,7 +20,7 @@ const Header: React.FC = () => {
               alt="Досторкон логотип"
               width={100}
               height={100}
-              className="logo"
+              className="rounded-md"
             />
           </Link>
           <ul
