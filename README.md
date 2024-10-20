@@ -1,5 +1,8 @@
 # Meat Shop
 
+## 1920px
+
+<img src="./src/app/main.png"/>
 
 ### Технологии
 
